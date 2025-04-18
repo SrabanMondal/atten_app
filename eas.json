@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 14.2.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "autoIncrement": true,
+        "env": {
+        "API_URL": "https://attendence-v1.vercel.app"
+      }
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "autoIncrement": true,
+        "env": {
+        "API_URL": "https://attendence-v1.vercel.app"
+      }
+      }
+    },
+    "production": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "autoIncrement": true,
+        "env": {
+        "API_URL": "https://attendence-v1.vercel.app"
+      }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
